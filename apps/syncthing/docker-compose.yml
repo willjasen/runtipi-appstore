@@ -13,7 +13,7 @@ services:
       - ${APP_DATA_DIR}/data:/var/syncthing
       - ${ROOT_FOLDER_HOST}/media/data/syncthing:/media/data/syncthing
     ports:
-      - ${APP_PORT}:8384
+      - ${APP_DOMAIN}:8384
       - 22000:22000/tcp # TCP file transfers
       - 22000:22000/udp # QUIC file transfers
       - 21027:21027/udp # Receive local discovery broadcasts
